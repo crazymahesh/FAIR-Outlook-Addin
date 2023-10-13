@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-empty */
 /* eslint-disable prettier/prettier */
 /*
@@ -63,6 +64,7 @@ function write(message) {
  */
 function applyCategories() {
 	var selectedParentMep = document.getElementById("parentMep").value;
+  document.getElementById("pmSelect").innerText = selectedParentMep;
 	item.subject.setAsync(
         selectedParentMep,
         { asyncContext: { optionalVariable1: 1, optionalVariable2: 2 } },
