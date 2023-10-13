@@ -10,7 +10,9 @@
 /* global document, Office, console */
 
 let item;
+
 Office.onReady((info) => {
+  $(".ms-Dropdown").Dropdown();
   if (info.host === Office.HostType.Outlook) {
 	item = Office.context.mailbox.item;
     document.getElementById("sideload-msg").style.display = "none";
