@@ -5,7 +5,7 @@
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="FAIR"/>
-  <Description DefaultValue="FAIR Review Call - Flex"/>
+  <Description DefaultValue="FAIR Actions Review"/>
   <IconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
@@ -124,10 +124,10 @@
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="CategoriesGroupLabel" DefaultValue="FAIR Review Call"/>
-          <bt:String id="SelectButtonLabel" DefaultValue="Select Parent MEP"/>
+          <bt:String id="SelectButtonLabel" DefaultValue="FAIR Actions Review"/>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="SelectButtonDescription" DefaultValue="Opens a task pane to select and apply categories to an email or appointment."/>
+          <bt:String id="SelectButtonDescription" DefaultValue="Opens a task pane to select and apply Customer/Company Name to an email or appointment."/>
         </bt:LongStrings>
       </Resources>
     </VersionOverrides>
