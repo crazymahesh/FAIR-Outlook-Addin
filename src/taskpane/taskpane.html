@@ -12,9 +12,10 @@
 
     <!-- Office JavaScript API -->
     <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
-     <script type="text/javascript" src="taskpane.js"></script>
+    <script type="text/javascript" src="taskpane.js"></script>
     <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
     <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.components.min.css" />
 
     <!-- Template styles -->
     <link href="taskpane.css" rel="stylesheet" type="text/css" />
@@ -22,27 +23,53 @@
 
 <body class="ms-font-m ms-welcome ms-Fabric">
     <header class="ms-welcome__header ms-bgColor-neutralLighter">
-        <img width="90" height="90" src="../../assets/logo-filled.png" alt="Contoso" title="Contoso" />
-        <h1 class="ms-font-su">Welcome</h1>
+        <img width="90" height="90" src="../../assets/logo-filled.png" alt="FAIR" title="FAIR" />
+        <h1 class="ms-font-su">FAIR Actions Review</h1>
     </header>
     <!-- <section id="sideload-msg" class="ms-welcome__main"> -->
         <!-- <h2 class="ms-font-xl">Please <a target="_blank" href="https://learn.microsoft.com/office/dev/add-ins/testing/test-debug-office-add-ins#sideload-an-office-add-in-for-testing">sideload</a> your add-in to see app body.</h2> -->
     <!-- </section> -->
     <main id="app-body" class="ms-welcome__main">
         <div id="categories-container">
-            <select id="parentMep" title="Parent MEP">
-                <option value="Parent MEP 1">Parent MEP 1</option>
-                <option value="Parent MEP 2">Parent MEP 2</option>
-                <option value="Parent MEP 2">Parent MEP 3</option>
-                <option value="Parent MEP 2">Parent MEP 4</option>
-            </select>
+            <label for="parentMep" class="ms-Label">Customer Name</label>
+            <div class="ms-Dropdown" tabindex="0">
+                <i class="ms-Dropdown-caretDown ms-Icon ms-Icon--caretDown"></i>
+                <select id="parentMep" title="Customer Name" class="ms-Dropdown-select">
+                    <option value="MFG Dongguan, CHN [P]">MFG Dongguan, CHN [P]</option>
+                    <option value="MECH Zhuhai, CHN [P]">MECH Zhuhai, CHN [P]</option>
+                    <option value="MFG Chennai, IND [P]">MFG Chennai, IND [P]</option>
+                    <option value="MFG South Penang, MYS [P]">MFG South Penang, MYS [P]</option>
+                    <option value="MFG Manaus, BRA [P]">MFG Manaus, BRA [P]</option>
+                    <option value="MFG Jaguariuna, BRA [P]">MFG Jaguariuna, BRA [P]</option>
+                    <option value="MFG Migdal HE, ISR [P]">MFG Migdal HE, ISR [P]</option>
+                    <option value="MFG Milpitas, USA [P]">MFG Milpitas, USA [P]</option>
+                </select>
+            </div>
+            <div class="ms-Dropdown" tabindex="0">
+                <i class="ms-Dropdown-caretDown ms-Icon ms-Icon--caretDown"></i>
+                <label for="BPPL" class="ms-Label">Company Name</label>
+                <select id="bppl" title="Company Name" class="ms-Dropdown-select">
+                    <option value="Motorolo Solutions-Power Supplies">Motorolo Solutions-Power Supplies</option>
+                    <option value="Motorolo Solutions-Mobile">Motorolo Solutions-Mobile</option>
+                    <option value="Motorolo Mobility-Mobile">Motorolo Mobility-Mobile</option>
+                    <option value="Motorolo Solutoins-Comm Wireless">Motorolo Solutoins-Comm Wireless</option>
+                    <option value="Motorolo Repair-Mobile">Motorolo Repair-Mobile</option>
+                </select>
+            </div>
         </div>
         <p id="notification"></p>
-        <button id="apply-categories" class="ms-Button" onclick="applyCategories()">
+        <!-- <button id="apply-categories" class="ms-Button" onclick="applyCategories()">
             <span class="ms-Button-label">Apply</span>
+        </button> -->
+        <center>
+        <button class="ms-Button" id="apply-categories" onclick="applyCategories()">
+            <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+            <span class="ms-Button-label">Insert Reference</span>
+            <span class="ms-Button-description">Insert Reference into document</span>
         </button>
+        </center>
 		<p id="message"></p>
-        <p id="pmSelect"></p>
+        <!-- <p id="pmSelect"></p> -->
         <!-- <h3>Categories applied:</h3> -->
         <!-- <div id="applied-categories-container"></div> -->
     </main>
