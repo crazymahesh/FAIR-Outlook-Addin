@@ -14,7 +14,7 @@ Office.onReady((info) => {
     document.getElementById("sideload-msg").style.display = "none";
     document.getElementById("app-body").style.display = "flex";
     //getCategories();
-     document.getElementById("apply-categories").onclick = applyCategories;
+     //document.getElementById("apply-categories").onclick = applyCategories;
     // document.getElementById("categories-container").onclick = function () {
     //   clearElement("notification");
     // };
