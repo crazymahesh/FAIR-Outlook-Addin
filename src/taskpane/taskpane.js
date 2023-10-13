@@ -6,13 +6,14 @@
  */
 
 /* global document, Office */
-
+let item;
 Office.onReady((info) => {
   if (info.host === Office.HostType.Outlook) {
+	item = Office.context.mailbox.item;
     document.getElementById("sideload-msg").style.display = "none";
     document.getElementById("app-body").style.display = "flex";
     //getCategories();
-    // document.getElementById("apply-categories").onclick = applyCategories;
+     document.getElementById("apply-categories").onclick = applyCategories;
     // document.getElementById("categories-container").onclick = function () {
     //   clearElement("notification");
     // };
@@ -53,29 +54,49 @@ function getCategories() {
   });
 }
 
+function write(message) {
+    document.getElementById("message").innerText += message; 
+}
+
 /**
  * Apply the selected categories to the message or appointment.
  */
 function applyCategories() {
-  let selectedCategories = getSelectedCategories("applicable-categories");
-  if (selectedCategories.length > 0) {
-    Office.context.mailbox.item.categories.addAsync(
-      selectedCategories,
-      (asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          return;
-        }
+	var selectedParentMep = document.getElementById("parentMep").value;
+	item.subject.setAsync(
+        selectedParentMep,
+        { asyncContext: { optionalVariable1: 1, optionalVariable2: 2 } },
+        (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                write(asyncResult.error.message);
+                return;
+            }
 
-        document.getElementById("notification").innerHTML =
-          "<i>Selected categories have been applied.</i>";
-        getAppliedCategories();
-        clearSelection("applicable-categories");
-      }
-    );
-  } else {
-    document.getElementById("notification").innerHTML =
-      "<i>Select categories to be applied.</i>";
-  }
+            /*
+              The subject was successfully set.
+              Run additional operations appropriate to your scenario and
+              use the optionalVariable1 and optionalVariable2 values as needed.
+            */
+        });
+  // let selectedCategories = getSelectedCategories("applicable-categories");
+  // if (selectedCategories.length > 0) {
+    // Office.context.mailbox.item.categories.addAsync(
+      // selectedCategories,
+      // (asyncResult) => {
+        // if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          // return;
+        // }
+
+        // document.getElementById("notification").innerHTML =
+          // "<i>Selected categories have been applied.</i>";
+        // getAppliedCategories();
+        // clearSelection("applicable-categories");
+      // }
+    // );
+  // } else {
+    // document.getElementById("notification").innerHTML =
+      // "<i>Select categories to be applied.</i>";
+  // }
 }
 
 /**
@@ -124,6 +145,7 @@ function getAppliedCategories() {
     }
   });
 }
+
 
 /**
  * Clear the contents of an HTML element.
