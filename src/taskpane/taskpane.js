@@ -72,7 +72,7 @@ function applyCategories() {
 	var selectedParentMep = document.getElementById("parentMep").value;
   var selectedBPPL = document.getElementById("bppl").value;
   //document.getElementById("pmSelect").innerText = selectedParentMep;
-  var subjectStr = "FAIR Actions Review - "+"/"+ selectedParentMep + "/" + selectedBPPL;
+  var subjectStr = "FAIR Actions Review - "+ selectedParentMep + " / " + selectedBPPL;
 	item.subject.setAsync(
     subjectStr,
         { asyncContext: { optionalVariable1: 1, optionalVariable2: 2 } },
