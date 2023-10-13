@@ -18,7 +18,7 @@ Office.onReady((info) => {
     //getCategories();
      document.getElementById("apply-categories").onclick = function(){
       console.log(document.getElementById("parentMep").value);
-      //alert("ok");
+      alert("ok");
       applyCategories();
      };
     // document.getElementById("categories-container").onclick = function () {
@@ -70,9 +70,11 @@ function write(message) {
  */
 function applyCategories() {
 	var selectedParentMep = document.getElementById("parentMep").value;
-  document.getElementById("pmSelect").innerText = selectedParentMep;
+  var selectedBPPL = document.getElementById("bppl").value;
+  //document.getElementById("pmSelect").innerText = selectedParentMep;
+  var subjectStr = "FAIR Actions Review - "+"/"+ selectedParentMep + "/" + selectedBPPL;
 	item.subject.setAsync(
-        selectedParentMep,
+    subjectStr,
         { asyncContext: { optionalVariable1: 1, optionalVariable2: 2 } },
         (asyncResult) => {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
