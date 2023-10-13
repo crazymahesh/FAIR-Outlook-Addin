@@ -6,8 +6,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="FAIR"/>
   <Description DefaultValue="FAIR Review Call - Flex"/>
-  <IconUrl DefaultValue="https://raw.githubusercontent.com/crazymahesh/FAIR-Outlook-Addin/main/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://raw.githubusercontent.com/crazymahesh/FAIR-Outlook-Addin/main/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://raw.githubusercontent.com/crazymahesh/FAIR-Outlook-Addin/main/src/taskpane/taskpane.html"/>
+        <SourceLocation DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/src/taskpane/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -113,14 +113,14 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="Icon.16x16" DefaultValue="https://raw.githubusercontent.com/crazymahesh/FAIR-Outlook-Addin/main/assets/icon-16.png"/>
-          <bt:Image id="Icon.32x32" DefaultValue="https://raw.githubusercontent.com/crazymahesh/FAIR-Outlook-Addin/main/assets/icon-32.png"/>
-          <bt:Image id="Icon.80x80" DefaultValue="https://raw.githubusercontent.com/crazymahesh/FAIR-Outlook-Addin/main/assets/icon-80.png"/>
+          <bt:Image id="Icon.16x16" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-16.png"/>
+          <bt:Image id="Icon.32x32" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-32.png"/>
+          <bt:Image id="Icon.80x80" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="JSRuntime.Url" DefaultValue="https://raw.githubusercontent.com/crazymahesh/FAIR-Outlook-Addin/main/src/commands/commands.js"/>
-          <bt:Url id="WebViewRuntime.Url" DefaultValue="https://raw.githubusercontent.com/crazymahesh/FAIR-Outlook-Addin/main/src/commands/commands.html"/>
-          <bt:Url id="Taskpane.Url" DefaultValue="https://raw.githubusercontent.com/crazymahesh/FAIR-Outlook-Addin/main/src/taskpane/taskpane.html"/>
+          <bt:Url id="JSRuntime.Url" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/src/commands/commands.js"/>
+          <bt:Url id="WebViewRuntime.Url" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/src/commands/commands.html"/>
+          <bt:Url id="Taskpane.Url" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/src/taskpane/taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="CategoriesGroupLabel" DefaultValue="FAIR Review Call"/>
