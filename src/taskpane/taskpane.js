@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-empty */
 /* eslint-disable prettier/prettier */
@@ -17,6 +18,7 @@ Office.onReady((info) => {
     //getCategories();
      document.getElementById("apply-categories").onclick = function(){
       console.log(document.getElementById("parentMep").value);
+      alert("ok");
       applyCategories();
      };
     // document.getElementById("categories-container").onclick = function () {
