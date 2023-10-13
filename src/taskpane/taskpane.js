@@ -18,7 +18,7 @@ Office.onReady((info) => {
     //getCategories();
      document.getElementById("apply-categories").onclick = function(){
       console.log(document.getElementById("parentMep").value);
-      alert("ok");
+      //alert("ok");
       applyCategories();
      };
     // document.getElementById("categories-container").onclick = function () {
