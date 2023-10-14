@@ -7,7 +7,7 @@
   <DisplayName DefaultValue="FAIR"/>
   <Description DefaultValue="FAIR Actions Review - The purpose of this add-in helping us to organize the calls with structured subjects (including full and correct Company name and Customer name format)."/>
   <IconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-64-FAIR.png"/>
-  <HighResolutionIconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-128.png"/>
+  <HighResolutionIconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-128-FAIR.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -113,9 +113,9 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="Icon.16x16" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-16.png"/>
-          <bt:Image id="Icon.32x32" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-32.png"/>
-          <bt:Image id="Icon.80x80" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-80.png"/>
+          <bt:Image id="Icon.16x16" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-16-FAIR.png"/>
+          <bt:Image id="Icon.32x32" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-32-FAIR.png"/>
+          <bt:Image id="Icon.80x80" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-80-FAIR.png"/>
         </bt:Images>
         <bt:Urls>
           <bt:Url id="JSRuntime.Url" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/src/commands/commands.js"/>
@@ -124,7 +124,7 @@
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="CategoriesGroupLabel" DefaultValue="FAIR Actions Review"/>
-          <bt:String id="SelectButtonLabel" DefaultValue="FAIR (Focused Account Inventory Review)"/>
+          <bt:String id="SelectButtonLabel" DefaultValue="Focused Account Inventory Review"/>
         </bt:ShortStrings>
         <bt:LongStrings>
           <bt:String id="SelectButtonDescription" DefaultValue="Opens a task pane to select and apply Customer/Company Name to an email or appointment."/>
