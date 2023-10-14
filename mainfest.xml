@@ -4,9 +4,9 @@
   <Version>1.0.0.1</Version>
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="FAIR (Focused Account Inventory Review)"/>
-  <Description DefaultValue="FAIR Actions Review"/>
-  <IconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-64.png"/>
+  <DisplayName DefaultValue="FAIR"/>
+  <Description DefaultValue="FAIR Actions Review - The purpose of this plug in / add-in helping us to organize the calls with structured subjects (including full and correct Company name & Customer name format)."/>
+  <IconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-64-FAIR.png"/>
   <HighResolutionIconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
