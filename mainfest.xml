@@ -4,7 +4,7 @@
   <Version>1.0.0.1</Version>
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="FAIR"/>
+  <DisplayName DefaultValue="FAIR (Focused Account Inventory Review)"/>
   <Description DefaultValue="FAIR Actions Review"/>
   <IconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-128.png"/>
@@ -123,8 +123,8 @@
           <bt:Url id="Taskpane.Url" DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/src/taskpane/taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
-          <bt:String id="CategoriesGroupLabel" DefaultValue="FAIR Review Call"/>
-          <bt:String id="SelectButtonLabel" DefaultValue="FAIR Actions Review"/>
+          <bt:String id="CategoriesGroupLabel" DefaultValue="FAIR Actions Review"/>
+          <bt:String id="SelectButtonLabel" DefaultValue="FAIR (Focused Account Inventory Review)"/>
         </bt:ShortStrings>
         <bt:LongStrings>
           <bt:String id="SelectButtonDescription" DefaultValue="Opens a task pane to select and apply Customer/Company Name to an email or appointment."/>
