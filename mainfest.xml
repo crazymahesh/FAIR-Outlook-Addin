@@ -5,7 +5,7 @@
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="FAIR"/>
-  <Description DefaultValue="FAIR Actions Review - The purpose of this add-in helping us to organize the calls with structured subjects (including full and correct Company name and Customer name format)."/>
+  <Description DefaultValue="FAIR Actions Reviews - The purpose of this add-in helping us to organize the calls with structured subjects (including full and correct Company name and Customer name format)."/>
   <IconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-64-FAIR.png"/>
   <HighResolutionIconUrl DefaultValue="https://crazymahesh.github.io/FAIR-Outlook-Addin/assets/icon-128-FAIR.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
